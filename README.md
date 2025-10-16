@@ -45,7 +45,6 @@ Feature	Description
 - slideInLeft for section
 ♿ Accessibility	Included alt text for images, semantic tags, and ensured all links are keyboard-focusable.
 🌍 Deployed on Netlify	Hosted live using Netlify for easy public access.
-
 🛠 Technologies Used
 
 HTML5
@@ -68,12 +67,12 @@ profile-card/
 
 Clone the repository:
 
-git clone https://github.com/yourusername/profile-card.git
+git clone https://github.com/yourusername/Profile_card.git
 
 
 Navigate into the folder:
 
-cd profile-card
+cd Profile_card
 
 
 Open index.html in your browser.
@@ -90,7 +89,6 @@ Avatar	test-user-avatar
 Social Links	test-user-social-links
 Hobbies	test-user-hobbies
 Dislikes	test-user-dislikes
-
 🧾 Notes
 
 All animations were implemented with pure CSS keyframes.
