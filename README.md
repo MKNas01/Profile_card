@@ -6,9 +6,9 @@ The design follows all the requirements in the task document and includes additi
 
 🚀 Live Demo
 
-🔗 Live URL: 
+🔗 Live URL: https://mknas-profile.netlify.app/
 
-💻 GitHub Repo: 
+💻 GitHub Repo: https://github.com/MKNas01/Profile_card
 
 🧠 Project Overview
 
@@ -67,7 +67,7 @@ profile-card/
 
 Clone the repository:
 
-git clone https://github.com/yourusername/Profile_card.git
+git clone https://github.com/MKNas01/Profile_card.git
 
 
 Navigate into the folder:
