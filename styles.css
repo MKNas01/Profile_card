@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    animation: gradientShift 15s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+article[data-testid="test-profile-card"] {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    animation: fadeInUp 0.8s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article[data-testid="test-profile-card"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    margin-bottom: 1.5rem;
+    animation: slideInDown 0.6s ease-out 0.2s backwards;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h2 {
+    font-size: 1.8rem;
+    color: #2d3748;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+figure {
+    margin: 1.5rem 0;
+    animation: scaleIn 0.6s ease-out 0.4s backwards;
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+figure img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #667eea;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure img:hover {
+    transform: scale(1.05) rotate(3deg);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+}
+
+p[data-testid="test-user-bio"] {
+    color: #4a5568;
+    line-height: 1.7;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    animation: fadeIn 0.6s ease-out 0.6s backwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+div[data-testid="test-user-time"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    animation: pulse 2s ease-in-out infinite, fadeIn 0.6s ease-out 0.8s backwards;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+}
+
+nav {
+    margin: 2rem 0;
+    animation: fadeIn 0.6s ease-out 1s backwards;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.85rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+    display: inline-block;
+}
+
+nav a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+nav a:active {
+    transform: translateY(-1px);
+}
+
+section {
+    margin: 1.5rem 0;
+    text-align: left;
+    animation: slideInLeft 0.6s ease-out backwards;
+}
+
+section:nth-of-type(1) {
+    animation-delay: 1.2s;
+}
+
+section:nth-of-type(2) {
+    animation-delay: 1.4s;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+section h3 {
+    color: #2d3748;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    border-left: 4px solid #667eea;
+    padding-left: 0.8rem;
+}
+
+section ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+section ul li {
+    color: #4a5568;
+    margin: 0.5rem 0;
+    position: relative;
+    padding-left: 1.2rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+section ul li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+section ul li:hover {
+    transform: translateX(5px);
+    color: #667eea;
+}
+
+@media (max-width: 700px) {
+    article[data-testid="test-profile-card"] {
+        padding: 2rem 1.5rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    figure img {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (min-width: 700px) {
+    article[data-testid="test-profile-card"] {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 1.5rem 2rem;
+        max-width: 750px;
+        text-align: left;
+    }
+
+    header {
+        grid-column: 2;
+        grid-row: 1;
+        margin-bottom: 0;
+    }
+
+    figure {
+        grid-column: 1;
+        grid-row: 1 / 4;
+        margin: 0;
+    }
+
+    figure img {
+        width: 160px;
+        height: 160px;
+    }
+
+    p[data-testid="test-user-bio"] {
+        grid-column: 2;
+        grid-row: 2;
+        margin: 0;
+    }
+
+    div[data-testid="test-user-time"] {
+        grid-column: 2;
+        grid-row: 3;
+        margin: 0;
+    }
+
+    nav {
+        grid-column: 1 / 3;
+        grid-row: 4;
+        margin: 1rem 0;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    section {
+        grid-column: 1 / 3;
+    }
+
+    section:nth-of-type(1) {
+        grid-row: 5;
+    }
+
+    section:nth-of-type(2) {
+        grid-row: 6;
+    }
+}
