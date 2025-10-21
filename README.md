@@ -1,107 +1,119 @@
-🌟 Frontend Wizards — Stage 0 Task: Profile Card
+Frontend Wizards — HNG 13 Frontend Track
 
-This project is my submission for the HNG-13 Frontend Track (Stage 0) task.
-It’s a responsive and accessible Profile Card built using semantic HTML, modern CSS, and vanilla JavaScript.
-The design follows all the requirements in the task document and includes additional animations to make the interface visually appealing.
+This repository contains my submissions for the HNG 13 Frontend Track, starting from Stage 0 (Profile Card) to Stage 1 (Multi-Page Profile Website). Each stage demonstrates growth in structure, interactivity, and user experience using semantic HTML, modern CSS, and vanilla JavaScript.
 
-🚀 Live Demo
+🧩 Stage 0 — Profile Card
 
-🔗 Live URL: https://mknas-profile.netlify.app/
+A responsive and accessible profile card showcasing my personal details, built using semantic HTML, CSS, and vanilla JavaScript.
 
-💻 GitHub Repo: https://github.com/MKNas01/Profile_card
+⚙️ Features
 
-🧠 Project Overview
+Semantic HTML for accessibility
 
-The Profile Card displays key user details, including:
+Responsive design across devices
 
-Full Name
+Smooth animations and hover effects
 
-Short Biography
+Gradient background with subtle animation
 
-Current Time (in milliseconds)
+Displays live time (in milliseconds) updated every second
 
-Avatar Image
+Social media links with test IDs
 
-Social Links
-
-Hobbies List
-
-Dislikes List
-
-Every visible element includes a data-testid attribute to make automated testing easy and reliable.
-
-🧩 Features Implemented
-Feature	Description
-🏗 Semantic HTML Structure	Used <article>, <header>, <section>, <figure>, <nav>, and other semantic elements for accessibility.
-⏰ Dynamic Time	Displayed current time in milliseconds using Date.now() via JavaScript.
-🎨 Responsive Design	Implemented with Flexbox and CSS media queries (max-width: 700px and min-width: 700px).
-💫 Animations Added	Added subtle animations to enhance user experience:
-- gradientShift for body background
-- fadeInUp for article
-- slideInDown for header
-- scaleIn for figure
-- fadeIn for paragraph
-- pulse for div
-- slideInLeft for section
-♿ Accessibility	Included alt text for images, semantic tags, and ensured all links are keyboard-focusable.
-🌍 Deployed on Netlify	Hosted live using Netlify for easy public access.
-🛠 Technologies Used
+💻 Tech Stack
 
 HTML5
 
-CSS3
+CSS3 (Flexbox & Keyframes)
+
+Vanilla JavaScript
+
+📂 Project Structure
+├── index.html
+├── style.css
+└── app.js
+
+🧪 Test IDs
+
+Used data-testid attributes for automated testing validation in HNG projects.
+
+🚀 Live Demo
+
+🔗 https://mknas-profile.netlify.app
+
+🧱 Stage 1 — Multi-Page Profile Website
+
+This stage expands upon the Stage 0 profile card into a multi-page website with navigation, animations, and JavaScript-based form validation.
+
+🧩 Pages Included
+
+Home Page (index.html) — Profile card with live time updates.
+
+About Me Page (about.html) — Reflective section including goals, areas of improvement, and personal notes.
+
+Contact Page (contact.html) — Form with input validation and success message display.
+
+⚙️ Features
+
+Reusable layout and consistent design across pages
+
+Live time updates using Date.now()
+
+Form validation with detailed error messages
+
+Smooth page transitions (horizontal slide effect)
+
+Accessible markup with alt text and semantic structure
+
+Mobile-friendly layout using media queries
+
+🧠 Form Validation Rules
+
+All fields are required
+
+Email must be in valid format (e.g., name@example.com)
+
+Message must contain at least 10 characters
+
+Displays success message dynamically after valid submission
+
+💻 Tech Stack
+
+HTML5
+
+CSS3 (Flexbox & Animations)
 
 Vanilla JavaScript (ES6)
 
-Netlify (Deployment)
-
-📂 Folder Structure
-profile-card/
-│
+📂 Project Structure
 ├── index.html
+├── about.html
+├── contact.html
 ├── style.css
-├── script.js
-└── README.md
+├── app.js
+└── assets/
+    └── images/
 
-⚙️ How to Run Locally
+✅ How to Run Locally
 
-Clone the repository:
+Clone this repository
 
 git clone https://github.com/MKNas01/Profile_card.git
 
 
-Navigate into the folder:
+Navigate into the project folder
 
 cd Profile_card
 
 
 Open index.html in your browser.
 
-That’s it 🎉
+🚀 Deployment
 
-✅ Test IDs Checklist
-Element	data-testid
-Profile Card	test-profile-card
-Name	test-user-name
-Bio	test-user-bio
-Current Time	test-user-time
-Avatar	test-user-avatar
-Social Links	test-user-social-links
-Hobbies	test-user-hobbies
-Dislikes	test-user-dislikes
-🧾 Notes
+The website is deployed on Netlify
+🔗 Live URL: https://mknas-profile.netlify.app
 
-All animations were implemented with pure CSS keyframes.
+👏 Acknowledgment
 
-Time updates dynamically every second using JavaScript.
-
-Layout adjusts seamlessly for mobile, tablet, and desktop screens.
-
-👤 Author
-
-Name: Muhammed Kabiru Nasiru
-Track: HNG-13 Frontend Track
-Stage: 0
-Email: nasirumuhammedkabirux@gmail.com
-
-Twitter: @m_k_nas_
+This project was built as part of the HNG 13 Frontend Track (Stage 0 & Stage 1).
+Created by Muhammed Kabiru Nasiru — Frontend Developer passionate about design, interactivity, and AI-driven web experiences.
